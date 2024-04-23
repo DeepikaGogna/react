@@ -25,6 +25,18 @@
 # Produciton Build 
 - npx parcel build index.html
 
+# Babel
+- Babel is a Javascript Compiler. Its converts all JSX code to react code
+-
 
+# React Component
+ - React Functional Component - Its a normal javascript function which returns JSX code or return a react Element
+ - React Component
 
-Address 
+# Component Composition
+- you can add one component another component
+
+# JSX
+- same as html
+- we can write javascript as well inside html
+- it remove mal data. example if any hacker hack our api and send some attacking data if we are displaying reponse in curly braces it remove malacious code from the response. ex {response}

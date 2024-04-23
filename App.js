@@ -1,46 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-/* const heading = React.createElement(
-"h1",
-{ id: "heading" }, 
-"Hello React World!"
-); //3 Parameters we need to pass 1st Tag 2nd Attributes 3rd Children
-*/
 
-/* <div id="parent"><div id="child"><h1>I am H1</h1><h2>I am H2</h2></div></div>
-const parent = React.createElement("div",{
-    id: "parent"
-},
-React.createElement("div", {
-    id:"child"
-},[
-    React.createElement("h1",{},"I am H1"),
-    React.createElement("h2",{},"I am H2"),
-])
-); */
+    // React Element
+    const JSXHeading = ( 
+    <h1 id="heading">React with JSX</h1>
+ );
+    // Title Functional Component
+    const Title = () => {
+        return <h1>Title Component</h1>
+    }
 
-/* <div id="parent">
-<div id="child"><h1>I am H1</h1><h2>I am H2</h2></div><
-div id="child2"><h1>I am H1</h1><h2>I am H2</h2></div>
-</div> */
+    // React Functional Component
+    const HeadingComponent2 = () => {
+        return <h1>React Functional Component</h1>
+    };
 
-//Multiple child we are passing an array
-const parent = React.createElement("div",{ //React is an Object
-    id: "parent"
-},
-[React.createElement("div", {
-    id:"child"
-},[
-    React.createElement("h1",{},"I am H1"),
-    React.createElement("h2",{},"I am H2"),
-]),
-React.createElement("div", {
-    id:"child2"
-},[
-    React.createElement("h1",{},"I am H1"),
-    React.createElement("h2",{},"I am H2"),
-]),
-]); 
+    const HeadingComponent = () => (
+        <div id="container" >
+            <Title />
+            <Title></Title>
+            {Title()}
+         <h1>React Functional Component</h1>
+         </div>
+    );
 
     const root = ReactDOM.createRoot(document.getElementById("root"));
-    root.render(parent);
+    // root.render(JSXHeading); // render Element
+    root.render(<HeadingComponent />); // render Component
