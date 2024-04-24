@@ -40,3 +40,7 @@
 - same as html
 - we can write javascript as well inside html
 - it remove mal data. example if any hacker hack our api and send some attacking data if we are displaying reponse in curly braces it remove malacious code from the response. ex {response}
+
+# Props
+- Same as passing an arugment to a function 
+- Props are an object
