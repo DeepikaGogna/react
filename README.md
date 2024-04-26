@@ -44,3 +44,35 @@
 # Props
 - Same as passing an arugment to a function 
 - Props are an object
+
+# React Hooks
+
+
+# Default Import Export
+- 2 type
+- export default // export default Component
+- import Header from "../Path" 
+
+# Named Import Export
+- export const Compoent //export const LOGO_URL
+- import {Compoent} from "../Path" 
+
+# React Hooks
+- It is normal Javascript Utility Function
+- 2 important Hooks 
+- useState() - use for to generate Superpowerfull State Variable - using for update the list in UI - whenever a state variable is updates react will rerender my component
+syntax const [list , setList] = useState(listResponse)
+- useEffect()
+
+# Reconciliation Algoritham (React Fiber)
+- we have a dom resturant container and under here we have 10 resturant card now my ui is changing filtering from 10 card to 5 cards
+
+Virtual Dom is a representation of actual DOM.  It is an Object. If we console.log(<Body/>) then it will print object
+
+# reconciliation
+The algorithm React uses to diff one tree with another to determine which parts need to be changed.
+
+# Why React is fast
+it is working with Virtual DOM
+its having div Algoritham
+its having React Fibre algoritham
