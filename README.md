@@ -58,7 +58,7 @@
 - import {Compoent} from "../Path" 
 
 # React Hooks
-- It is normal Javascript Utility Function
+- It is normal Javascript Utility Function. Its has own some purpose or has its own functionality 
 - 2 important Hooks 
 - useState() - use for to generate Superpowerfull State Variable - using for update the list in UI - whenever a state variable is updates react will rerender my component
 syntax const [list , setList] = useState(listResponse)
@@ -71,8 +71,25 @@ Virtual Dom is a representation of actual DOM.  It is an Object. If we console.l
 
 # reconciliation
 The algorithm React uses to diff one tree with another to determine which parts need to be changed.
+Its find the difference between old version of virtual DOM and new version of virtual DOM.
+React will re render the Component but it is only updated the particular DOM value.
 
 # Why React is fast
 it is working with Virtual DOM
 its having div Algoritham
-its having React Fibre algoritham
+its having React Fibre algoritham // reconciliation makes React faster for comparision b/w old and new version of virtual DOM
+
+
+# Microservice
+- All applicaitons are in different server but for single application and in different language as well
+
+# 2 ways to fetch the data from API
+- Page Load --> API --> Page Render
+- Page Load -->page Render --> API --> Render Again
+
+# Hooks
+- useEffect() --> 2 arguments 1st callback function and 2nd is dependency array 
+when will use this useEffect --> after our component render --> if we want something after component render example after body function we want to some functionality
+
+useEffect(() => {}, []);
+
