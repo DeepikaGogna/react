@@ -88,8 +88,25 @@ its having React Fibre algoritham // reconciliation makes React faster for compa
 - Page Load -->page Render --> API --> Render Again
 
 # Hooks
-- useEffect() --> 2 arguments 1st callback function and 2nd is dependency array 
+- useEffect() --> 2 arguments 1st callback function and 2nd is dependency array like button click const we can pass
 when will use this useEffect --> after our component render --> if we want something after component render example after body function we want to some functionality
-
 useEffect(() => {}, []);
+- If no depedency array => use Effect is called on every render
+- If depedency array is empty [] => useEffect is called on initial render (just once)
+- If dependency array array is [btnName]=> called everytime btnName is updated
+
+
+UseState() =>
+- Never call useState outside your components because this are using for local state variable
+- Never create useState under if,else,for and function conditions
+
+
+# 2 Types of Routing
+- Client Side Routing
+- Server Side Routing
+
+
+
+
+
 
