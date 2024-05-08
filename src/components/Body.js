@@ -2,12 +2,15 @@ import ResturantCard from "./ResturantCard.js";
 import {useState, useEffect} from "react";
 import Shimmer from "./Shimmer.js";
 import { Link } from "react-router-dom";
+
 const Body = () => {
     const [listOfRestaurants, setListOfRestaurants] = useState([]);
 
     const [filteredRestaurants, setFilteredRestaurants] = useState([]);
 
     const [searchText, setSearchText] = useState("");
+
+
     useEffect(()=> {
         fetchData();
     }, []);
@@ -22,6 +25,9 @@ const Body = () => {
         setFilteredRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
 
     }
+
+
+
     // Conditional Rendering
    /* if(listOfRestaurants.length === 0 ){
        return <Shimmer/>;
